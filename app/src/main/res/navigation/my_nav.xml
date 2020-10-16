@@ -11,19 +11,19 @@
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
-            android:id="@+id/action_listFragment_to_adddFragment"
-            app:destination="@id/adddFragment" />
+            android:id="@+id/action_listFragment_to_addFragment"
+            app:destination="@id/addFragment" />
         <action
             android:id="@+id/action_listFragment_to_updateFragment"
             app:destination="@id/updateFragment" />
     </fragment>
     <fragment
-        android:id="@+id/adddFragment"
+        android:id="@+id/addFragment"
         android:name="com.app.taiye.todocleanarchitecture.fragments.add.AddFragment"
-        android:label="fragment_addd"
-        tools:layout="@layout/fragment_addd" >
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
         <action
-            android:id="@+id/action_adddFragment_to_listFragment"
+            android:id="@+id/action_addFragment_to_listFragment"
             app:destination="@id/listFragment" />
     </fragment>
     <fragment

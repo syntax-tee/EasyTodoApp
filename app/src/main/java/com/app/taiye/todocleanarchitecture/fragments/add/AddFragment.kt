@@ -20,6 +20,6 @@ class AddFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_addd, container, false)
+        return inflater.inflate(R.layout.fragment_add, container, false)
     }
 }
