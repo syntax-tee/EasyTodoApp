@@ -9,6 +9,7 @@
     tools:context=".fragments.add.AddFragment">
 
 
+
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="0dp"
