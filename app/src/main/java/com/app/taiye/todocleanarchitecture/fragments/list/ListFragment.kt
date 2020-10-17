@@ -9,11 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.app.taiye.todocleanarchitecture.R
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ListFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class ListFragment : Fragment() {
 
 
@@ -26,7 +22,9 @@ class ListFragment : Fragment() {
       view.floatingActionButton.setOnClickListener {
           findNavController().navigate(R.id.action_listFragment_to_addFragment)
       }
-
+      view.listLayout.setOnClickListener {
+          findNavController().navigate(R.id.action_listFragment_to_updateFragment)
+      }
         return view
     }
 

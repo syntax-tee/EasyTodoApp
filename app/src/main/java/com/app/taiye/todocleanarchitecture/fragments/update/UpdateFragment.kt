@@ -7,11 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.app.taiye.todocleanarchitecture.R
 
-/**
- * A simple [Fragment] subclass.
- * Use the [UpdateFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class UpdateFragment : Fragment() {
 
 

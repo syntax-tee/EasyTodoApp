@@ -8,28 +8,31 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.app.taiye.todocleanarchitecture.fragments.list.ListFragment"
-        android:label="fragment_list"
+        android:label="ToDoApp"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_addFragment"
+            android:label="Add"
             app:destination="@id/addFragment" />
         <action
             android:id="@+id/action_listFragment_to_updateFragment"
+            android:label="Update"
             app:destination="@id/updateFragment" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
         android:name="com.app.taiye.todocleanarchitecture.fragments.add.AddFragment"
-        android:label="fragment_add"
+        android:label="Add"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_listFragment"
+            android:label="Add"
             app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/updateFragment"
         android:name="com.app.taiye.todocleanarchitecture.fragments.update.UpdateFragment"
-        android:label="fragment_update"
+        android:label="Update"
         tools:layout="@layout/fragment_update" >
         <action
             android:id="@+id/action_updateFragment_to_listFragment"
