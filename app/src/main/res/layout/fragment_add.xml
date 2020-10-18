@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    tools:context=".fragments.add.AddFragment">
+    tools:context=".ui.fragments.add.AddFragment">
 
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/title_et"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="@drawable/custom_input"
@@ -36,7 +36,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/title_et"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText

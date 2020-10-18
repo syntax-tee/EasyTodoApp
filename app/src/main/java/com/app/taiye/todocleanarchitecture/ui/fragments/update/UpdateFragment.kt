@@ -1,4 +1,4 @@
-package com.app.taiye.todocleanarchitecture.fragments.update
+package com.app.taiye.todocleanarchitecture.ui.fragments.update
 
 import android.os.Bundle
 import android.view.*

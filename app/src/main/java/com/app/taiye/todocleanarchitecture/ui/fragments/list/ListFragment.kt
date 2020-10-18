@@ -1,4 +1,4 @@
-package com.app.taiye.todocleanarchitecture.fragments.list
+package com.app.taiye.todocleanarchitecture.ui.fragments.list
 
 import android.os.Bundle
 import android.view.*
@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.app.taiye.todocleanarchitecture.R
 import kotlinx.android.synthetic.main.fragment_list.view.*
-import java.util.zip.Inflater
 
 
 class ListFragment : Fragment() {

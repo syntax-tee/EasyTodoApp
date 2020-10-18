@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.app.taiye.todocleanarchitecture.fragments.list.ListFragment"
+        android:name="com.app.taiye.todocleanarchitecture.ui.fragments.list.ListFragment"
         android:label="ToDoApp"
         tools:layout="@layout/fragment_list" >
         <action
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.app.taiye.todocleanarchitecture.fragments.add.AddFragment"
+        android:name="com.app.taiye.todocleanarchitecture.ui.fragments.add.AddFragment"
         android:label="Add"
         tools:layout="@layout/fragment_add" >
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateFragment"
-        android:name="com.app.taiye.todocleanarchitecture.fragments.update.UpdateFragment"
+        android:name="com.app.taiye.todocleanarchitecture.ui.fragments.update.UpdateFragment"
         android:label="Update"
         tools:layout="@layout/fragment_update" >
         <action
