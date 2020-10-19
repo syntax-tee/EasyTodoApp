@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/priorities_spinner"
+        android:id="@+id/priority_spinner"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -54,6 +54,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@drawable/custom_input"
-        app:layout_constraintTop_toBottomOf="@+id/priorities_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/priority_spinner"
         app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

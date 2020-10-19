@@ -12,9 +12,10 @@
     <string name="add">Add</string>
     <string name="update">Save</string>
     <string name="delete">Delete</string>
+    <string name="desc">Some Description</string>
     <string-array name="priorities">
-         <item>High</item>
-        <item>Medium</item>
-        <item>Low</item>
+         <item>High Priority</item>
+        <item>Medium Priority</item>
+        <item>Low Priority</item>
     </string-array>
 </resources>

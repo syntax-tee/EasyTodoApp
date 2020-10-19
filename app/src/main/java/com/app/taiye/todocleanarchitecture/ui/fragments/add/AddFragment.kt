@@ -29,7 +29,7 @@ class AddFragment() : Fragment() {
         val view = inflater.inflate(R.layout.fragment_add, container, false)
 
         setHasOptionsMenu(true)
-        view.priorities_spinner.onItemSelectedListener =  sharedViewModel.listener
+        view.priority_spinner.onItemSelectedListener =  sharedViewModel.listener
         return view
     }
 
@@ -47,7 +47,7 @@ class AddFragment() : Fragment() {
 
     private fun insertDataToDb() {
         val mTitle = title_et.text.toString()
-        val mPriority = priorities_spinner.selectedItem.toString()
+        val mPriority = priority_spinner.selectedItem.toString()
         val mDescription = description_et.text.toString()
 
         val validation = sharedViewModel.verifyDataFromUser(mTitle, mDescription)
@@ -58,7 +58,7 @@ class AddFragment() : Fragment() {
             Toast.makeText(requireContext(),"Successfully Added",Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_addFragment_to_listFragment)
         }else{
-
+            Toast.makeText(requireContext(),"Something Went Wrong...",Toast.LENGTH_LONG).show()
         }
     }
 

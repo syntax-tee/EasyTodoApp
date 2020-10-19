@@ -47,5 +47,8 @@
             app:destination="@id/listFragment"
             app:enterAnim="@anim/from_right"
             app:exitAnim="@anim/to_left" />
+        <argument
+            android:name="currentitem"
+            app:argType="com.app.taiye.todocleanarchitecture.data.model.ToDoData" />
     </fragment>
 </navigation>
