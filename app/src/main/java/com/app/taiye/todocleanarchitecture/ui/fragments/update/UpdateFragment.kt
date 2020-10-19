@@ -9,13 +9,11 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.app.taiye.todocleanarchitecture.R
-import com.app.taiye.todocleanarchitecture.data.Priority
 import com.app.taiye.todocleanarchitecture.data.model.ToDoData
+import com.app.taiye.todocleanarchitecture.databinding.FragmentUpdateBinding
 import com.app.taiye.todocleanarchitecture.ui.viewmodel.SharedViewModel
 import com.app.taiye.todocleanarchitecture.ui.viewmodel.ToDoViewModel
-import kotlinx.android.synthetic.main.fragment_add.view.*
 import kotlinx.android.synthetic.main.fragment_update.*
-import kotlinx.android.synthetic.main.fragment_update.view.*
 
 class UpdateFragment : Fragment() {
     private val args by navArgs<UpdateFragmentArgs>()
@@ -23,18 +21,23 @@ class UpdateFragment : Fragment() {
     private val toDoViewModel: ToDoViewModel by viewModels()
 
 
+    private var _binding : FragmentUpdateBinding? = null
+    private val binding get() = _binding!!
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_update, container, false)
+
+        //data binding
+        _binding = FragmentUpdateBinding.inflate(inflater,container,false)
+        binding.lifecycleOwner = this
+        binding.args = args
+
         setHasOptionsMenu(true)
 
-        view.current_title_et.setText(args.currentitem.title)
-        view.current_description_et.setText(args.currentitem.description)
-        view.current_priority_spinner.setSelection(sharedViewModel.parsePriorityToInt(args.currentitem.priority))
-        view.current_priority_spinner.onItemSelectedListener = sharedViewModel.listener
-        return view
+        return binding.root
     }
 
 

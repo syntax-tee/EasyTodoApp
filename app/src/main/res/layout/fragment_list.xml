@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/listLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.list.ListFragment"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="mSharedViewModel"
+            type="com.app.taiye.todocleanarchitecture.ui.viewmodel.SharedViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/listLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.list.ListFragment">
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
@@ -28,6 +37,7 @@
             android:layout_marginBottom="24dp"
             android:clickable="true"
             android:focusable="true"
+            android:navigateToAddFragment="@{true}"
             android:src="@drawable/ic_add"
             android:tint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -39,6 +49,7 @@
             android:layout_height="100dp"
             android:src="@drawable/no_data"
             android:visibility="invisible"
+            android:emptyDatabase="@{mSharedViewModel.emptyDatabase}"
             app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/recyclerView"
@@ -54,8 +65,10 @@
             android:text="@string/no_data"
             android:textSize="16sp"
             android:visibility="invisible"
+            android:emptyDatabase="@{mSharedViewModel.emptyDatabase}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/recyclerView"
             app:layout_constraintTop_toBottomOf="@+id/no_data_imageView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
