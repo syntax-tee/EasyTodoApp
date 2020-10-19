@@ -1,16 +1,11 @@
 package com.app.taiye.todocleanarchitecture.ui.fragments.list
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
-import androidx.navigation.findNavController
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.app.taiye.todocleanarchitecture.R
-import com.app.taiye.todocleanarchitecture.data.Priority
 import com.app.taiye.todocleanarchitecture.data.model.ToDoData
 import com.app.taiye.todocleanarchitecture.databinding.RowLayoutBinding
-import kotlinx.android.synthetic.main.row_layout.view.*
 
 class ListAdapter:RecyclerView.Adapter<ListAdapter.ListViewHolder>(){
 
@@ -47,8 +42,10 @@ class ListAdapter:RecyclerView.Adapter<ListAdapter.ListViewHolder>(){
 
 
     fun setData(toDoData: List<ToDoData>){
+        val todoDiffUtil = TodoDiffUtil(dataList,toDoData)
+        val todoDiffResult = DiffUtil.calculateDiff(todoDiffUtil)
         this.dataList = toDoData
-        notifyDataSetChanged()
+        todoDiffResult.dispatchUpdatesTo(this)
     }
 
 }

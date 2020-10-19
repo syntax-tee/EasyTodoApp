@@ -14,7 +14,7 @@ import com.app.taiye.todocleanarchitecture.data.model.ToDoData
 
 class SharedViewModel(application:Application): AndroidViewModel(application) {
 
-   val emptyDatabase: MutableLiveData<Boolean> = MutableLiveData(true)
+   val emptyDatabase: MutableLiveData<Boolean> = MutableLiveData(false)
 
     fun checkIfEmptyDatabase(todoData:List<ToDoData>){
         emptyDatabase.value = todoData.isEmpty()
@@ -34,9 +34,7 @@ class SharedViewModel(application:Application): AndroidViewModel(application) {
     }
 
     fun verifyDataFromUser(title:String,description:String):Boolean{
-        return if(TextUtils.isEmpty(title) || TextUtils.isEmpty(description)){
-            false
-        }else !(title.isEmpty() || description.isEmpty())
+        return !(title.isEmpty() || description.isEmpty())
     }
 
     fun parsePriority(priority:String): Priority {

@@ -7,6 +7,9 @@ import com.app.taiye.todocleanarchitecture.data.dao.ToDoDao
 class TodoRepository(val todoDao:ToDoDao) {
 
     val getAllData:LiveData<List<ToDoData>> = todoDao.getAllData()
+    val sortByHighPriority:LiveData<List<ToDoData>> = todoDao.sortByHighPriority()
+    val sortByLowPriority:LiveData<List<ToDoData>> = todoDao.sortByLowPriority()
+
 
     suspend fun insertData(toDoData: ToDoData){
         todoDao.insertData(toDoData)
@@ -23,6 +26,10 @@ class TodoRepository(val todoDao:ToDoDao) {
 
     suspend fun deleteItem(toDoData: ToDoData){
         todoDao.deleteItem(toDoData)
+    }
+
+    fun searchDatabase(searchString:String):LiveData<List<ToDoData>>{
+       return todoDao.searchDatabase(searchString)
     }
 
 }

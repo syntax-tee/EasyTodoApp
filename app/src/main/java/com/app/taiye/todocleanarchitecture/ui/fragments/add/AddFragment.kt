@@ -55,10 +55,10 @@ class AddFragment() : Fragment() {
         if(validation){
             val newData = ToDoData(0,mTitle,sharedViewModel.parsePriority(mPriority),mDescription)
             todoViewModel.insertData(newData)
-            Toast.makeText(requireContext(),"Successfully Added",Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(),"Note Successfully Added",Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_addFragment_to_listFragment)
         }else{
-            Toast.makeText(requireContext(),"Something Went Wrong...",Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(),"Kindly fill all fields",Toast.LENGTH_LONG).show()
         }
     }
 
