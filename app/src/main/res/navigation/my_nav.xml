@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.app.taiye.todocleanarchitecture.ui.fragments.list.ListFragment"
-        android:label="ToDoApp"
+        android:label="Easy Todo"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_addFragment"
