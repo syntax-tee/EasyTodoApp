@@ -9,6 +9,7 @@
 
 # Easy Note App Feature Image
 
+![easy_todo_feature_image](https://user-images.githubusercontent.com/49109632/96673919-86d72680-135f-11eb-8c7f-1e95dc35d867.png)
 
 
 ### Used libraries and technologies
