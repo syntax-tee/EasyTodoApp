@@ -7,6 +7,10 @@
 **4. Search for a Task** </br>
 **5. Filter based on Priority** </br>
 
+# Easy Note App Feature Image
+
+
+
 ### Used libraries and technologies
 **Kotlin** - Primary programming language.</br>
 **MVVM** - Structured Model-View-ViewModel architecture.</br>
