@@ -10,6 +10,7 @@
 ### Used libraries and technologies
 **Kotlin** - Primary programming language.</br>
 **MVVM** - Structured Model-View-ViewModel architecture.</br>
-**Koin** - Dependency injection and service location.</br>
 **Kotlin Coroutines** - Thread management and concurrency.</br>
 **Architecture Components** - Lifecycle and Jetpack components.</br>
+**Navigation Components** - Lifecycle and Jetpack components.</br>
+
