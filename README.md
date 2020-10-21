@@ -13,4 +13,6 @@
 **Kotlin Coroutines** - Thread management and concurrency.</br>
 **Architecture Components** - Lifecycle and Jetpack components.</br>
 **Navigation Components** - Lifecycle and Jetpack components.</br>
+**Room Database ** - Data Persistence.</br>
+
 
