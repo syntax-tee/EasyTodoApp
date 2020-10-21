@@ -1,11 +1,11 @@
 # Easy Note App
 #### Aesthetic Todo App that allows you to add
 
-**Add Task**  -
-**Update a Task**  -
-**Set Priority** -
-**Search for a Task** -
-**Filter based on Priority** -
+**Add Task**  </br>
+**Update a Task**  </br>
+**Set Priority** </br>
+**Search for a Task** </br>
+**Filter based on Priority** </br>
 
 ### Used libraries and technologies
 **Kotlin** - Primary programming language.</br>
