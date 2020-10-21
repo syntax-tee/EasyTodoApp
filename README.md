@@ -6,6 +6,8 @@
 **3. Set Priority** </br>
 **4. Search for a Task** </br>
 **5. Filter based on Priority** </br>
+**6. Delete Task ** </br>
+
 
 # Easy Note App Feature Image
 
