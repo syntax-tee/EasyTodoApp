@@ -2,7 +2,7 @@
 #### Aesthetic Todo App that allows you to add
 
 <a href="https://play.google.com/store/apps/details?id=com.app.taiye.todocleanarchitecture">
-  <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height=50px /></a>
+  <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height=60px /></a>
 
 
 **1. Add Task**  </br>
